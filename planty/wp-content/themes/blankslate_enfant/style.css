@@ -5,3 +5,72 @@ Author: Benoit - WPserveur
 Template: blankslate 
 Version: 0.1.0
 */
+body * {
+    font-family: 'Syne', sans-serif;
+}
+a {
+   text-decoration: none;
+}
+#wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+ #header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+ }
+
+ #header img {
+    width: 200px;
+ }
+
+ #branding {
+    align-self: center;
+    margin: 37px;
+ }
+
+ header nav ul {
+   display: flex;
+   justify-content: space-between;
+}
+header nav ul li {
+   padding: 20px 50px; 
+   height: 80px;  
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+}
+
+header nav ul li:first-child:hover {
+   font-weight : bold;
+   font-size: 13px;
+}
+header nav ul li:first-child a {
+   color: black;
+}
+
+header nav ul li a{
+   text-decoration: none;
+}
+header nav ul li:last-child {
+   background-color: #DC9F96;
+   font-weight: bold;
+}
+header nav ul li:last-child a {
+   color:#FFFFFF;
+}
+header nav ul li:last-child:hover {
+   background-color: #C02E44;
+}
+
+#footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+}
+footer a {
+   color: black;
+   font-weight: 500;
+}
