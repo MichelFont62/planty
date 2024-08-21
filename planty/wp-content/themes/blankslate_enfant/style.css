@@ -12,7 +12,9 @@ a {
    text-decoration: none;
 }
 #wrapper {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
     margin: 0 auto;
 }
  #header {
@@ -73,4 +75,22 @@ header nav ul li:last-child:hover {
 footer a {
    color: black;
    font-weight: 500;
+}
+@media screen and (min-width: 320px) and (max-width: 1440px) {
+   header, footer {
+       width: 100% !important;
+   }
+}
+
+.wpforms-submit-container{
+   display: flex;
+   justify-content: center;
+}
+div.wpforms-submit-container button[type=submit].bouton {
+   width: 200px;
+   height: 55px;
+font-size: 15px;
+}
+div.wpforms-submit-container button[type=submit].bouton:hover {
+background-color: #C02E44 !important;
 }
