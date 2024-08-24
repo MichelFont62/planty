@@ -12,9 +12,7 @@ a {
    text-decoration: none;
 }
 #wrapper {
-    width: 100%;
     max-width: 1440px;
-    min-width: 320px;
     margin: 0 auto;
 }
  #header {
@@ -22,7 +20,7 @@ a {
     height: 80px;
     justify-content: space-between;
  }
-
+ 
  #header img {
     width: 200px;
  }
@@ -41,6 +39,7 @@ header nav ul li {
    height: 80px;  
    font-size: 16px;
    display: flex;
+   justify-content: center;
    align-items: center;
 }
 
@@ -66,6 +65,17 @@ header nav ul li:last-child:hover {
    background-color: #C02E44;
 }
 
+@media screen and (max-width : 768px) {
+   #header {
+      height: auto;
+      flex-direction: column;
+   }
+   header nav ul {
+      flex-direction: column;
+   }   
+ }
+
+
 #footer {
    display: flex;
    justify-content: center;
@@ -76,21 +86,85 @@ footer a {
    color: black;
    font-weight: 500;
 }
-@media screen and (min-width: 320px) and (max-width: 1440px) {
-   header, footer {
-       width: 100% !important;
-   }
+
+.form_contact .wpcf7-form-control {
+         width: 380px;
+         height: 70px;
+         padding: 10px;
+         border: none;
+         border-radius: 10px !important;
+         font-size: 16px;
+         margin-bottom: 30px;
 }
 
-.wpforms-submit-container{
+
+.label1{
+   font-size: 20px;
+   display: block;
+}
+
+#message_contact {
+   height: 230px;
+}
+
+.form_contact .bouton {
+   width: 200px;
+   height: 55px;
+   font-size: 15px;
+   color: #FFFFFF;
+   background-color: #E0B9B4;
+}
+.form_contact .bouton:hover {
+background-color: #C02E44;
+}
+
+.form_contact p {
    display: flex;
    justify-content: center;
 }
-div.wpforms-submit-container button[type=submit].bouton {
-   width: 200px;
-   height: 55px;
-font-size: 15px;
+
+@media screen and (max-width: 767px){
+   .form_contact  .wpcf7-form-control{
+      width: 260px;
+   }
+   .form_contact  .bouton{
+      width: 100px;
+   }
 }
-div.wpforms-submit-container button[type=submit].bouton:hover {
-background-color: #C02E44 !important;
+.form_contact .wpcf7-spinner {
+   margin:0
+}
+
+/* page commander */
+
+#content .bg-img-produit {
+   flex: 1;
+   height: 120px;
+}
+#content .bg-img-produit .elementor-widget-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.form_commander .wpcf7-form-control.wpcf7-number {
+   width: 40px;
+   height: 55px;
+   text-align: center;
+   font-size: 16px;
+}
+
+.form_commander .wpcf7-form-control.wpcf7-number::-webkit-outer-spin-button,
+.form_commander .wpcf7-form-control.wpcf7-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form_commander .wpcf7-form-control.wpcf7-number {
+    -moz-appearance: textfield; /* Pour Firefox */
+}
+.form_commander p {
+   display: flex;
+   justify-content: space-around;
+   gap: 30px;
 }
