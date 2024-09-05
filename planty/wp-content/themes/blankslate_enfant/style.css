@@ -132,7 +132,7 @@ background-color: #C02E44;
    }
 }
 .form_contact .wpcf7-spinner {
-   margin:0
+   display: none;
 }
 
 /* page commander */
@@ -167,4 +167,107 @@ background-color: #C02E44;
    display: flex;
    justify-content: space-around;
    gap: 30px;
+}
+
+.form_commander hr{
+   margin-top: 40px !important;
+   margin-bottom: 40px !important;
+}
+
+/* formulaire commander  double côté  */
+
+.doubleform h2{
+   font-size: 30px;
+   font-weight: bold;
+   color: #FFFFFF;
+   margin-bottom: 30px;
+}
+
+.doubleform .wpcf7-form-control{
+   width: 380px;
+   height: 70px;
+   border: none;
+   border-radius: 10px;
+   padding: 10px;
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+
+.doubleform label{
+   color: #FFFFFF;
+}
+
+.infos {
+   position: relative;
+}
+.infos::after {
+   content: " ";
+   width: 1px;
+   height: 100%;
+   background: #FFF;
+   display: block;
+   position: absolute;
+   top: 0;
+   left: calc(100% + 45px/2);
+}
+
+.doubleform{
+   display: flex;
+   justify-content: center;
+   gap: 45px;
+}
+
+.commander_bouton .bouton {
+   width: 200px;
+   height: 55px;
+   font-size: 15px;
+   color: #FFFFFF;
+   background-color: #E0B9B4;
+   border: none;
+   border-radius: 10px;
+   margin-top: 45px;
+   margin-bottom: 90px;
+}
+.commander_bouton .bouton:hover {
+background-color: #C02E44;
+}
+
+.commander_bouton{
+   display: flex;
+   justify-content: center;
+}
+
+.commander_bouton .wpcf7-spinner {
+display: none;
+}
+
+@media screen and (max-width: 767px){
+   .bg-img-produit h2 {
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+   }
+   .doubleform{
+      flex-direction:column;
+      align-items: center;
+      gap:5px;
+   }
+   .infos::after {
+      display: none;
+   }
+.doubleform  .wpcf7-form-control{
+      width: 260px;
+   }
+   .commander_bouton  .bouton{
+      width: 120px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+   }
+}
+
+/* Cibler les deux premiers éléments */
+header nav ul li:nth-child(-n+2):hover {
+   font-weight: bold;
+   font-size: 13px;
+   color: black;
 }
