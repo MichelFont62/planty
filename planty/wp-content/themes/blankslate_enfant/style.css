@@ -1,7 +1,7 @@
 /*
 Theme Name: BlankSlate enfant
-Description: Theme enfant de Benoit WPServeur
-Author: Benoit - WPserveur
+Description: Theme enfant de moi
+Author: moi
 Template: blankslate 
 Version: 0.1.0
 */
@@ -43,7 +43,7 @@ header nav ul li {
    align-items: center;
 }
 
-header nav ul li:first-child:hover {
+header nav ul li:first-child:hover, header nav ul li.admin:hover {
    font-weight : bold;
    font-size: 13px;
 }
@@ -265,9 +265,6 @@ display: none;
    }
 }
 
-/* Cibler les deux premiers éléments */
-header nav ul li:nth-child(-n+2):hover {
-   font-weight: bold;
-   font-size: 13px;
+a:visited{
    color: black;
 }
