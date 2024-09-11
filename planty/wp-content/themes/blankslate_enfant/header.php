@@ -16,7 +16,7 @@ echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_blog
 ?>
 </div>
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </nav>
 </header>
 <div id="container">
